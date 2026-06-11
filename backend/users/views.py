@@ -3,11 +3,11 @@ from .serializers import *
 
 AllowAny = permissions.AllowAny
 
-class RegisterView(generics.CreateAPIView):
-    serializer_class = UserRegistrationSerializer
+class SignUpView(generics.CreateAPIView):
+    serializer_class = UserSignUpSerializer
     permission_classes = [AllowAny]
 
-class CurrentUserView(generics.RetrieveAPIView):
+class ProfileView(generics.RetrieveAPIView):
     queryset = User.objects.all()
-    serializer_class = UserRetrieveSerializer
+    serializer_class = UserProfileSerializer
     lookup_field = 'username'  # Optional: defaults to 'pk'
