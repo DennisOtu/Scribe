@@ -1,6 +1,6 @@
 from rest_framework import generics
 from .models import *
-from .mySerializers import *
+from .serializers import *
 from rest_framework.pagination import PageNumberPagination
 
 class PostListAPIView(generics.ListCreateAPIView):
