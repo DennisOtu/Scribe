@@ -10,4 +10,4 @@ class SignUpView(generics.CreateAPIView):
 class ProfileView(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserProfileSerializer
-    lookup_field = 'username'  # Optional: defaults to 'pk'
+    lookup_field = 'username' 
