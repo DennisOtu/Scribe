@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 #from django.urls import reverse
 
-class Post(models.Model):
+class Article(models.Model):
     author = models.CharField(max_length=100)
     date = models.DateTimeField(default=timezone.now)
     category = models.CharField(max_length=50)
@@ -17,4 +17,4 @@ class Post(models.Model):
         return self.title
 
 #    def get_absolute_url(self):
-#        return reverse('post-detail', kwargs={'pk': self.pk})
+#        return reverse('article-details', kwargs={'pk': self.pk})

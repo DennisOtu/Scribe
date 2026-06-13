@@ -1,0 +1,51 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.navBar {
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index: 9999;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.navRight {
+  width: 33%;
+  height: 3em;
+  margin-left: auto;
+  margin-right: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+  font-family: var(--fontSans);
+  color: var(--textColor);
+  font-size: 14px;
+  text-align: center;
+}
+
+.navRight div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navRight div:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--cribzBlue);
+  border-radius: 12px;
+  background: var(--lightGrey);
+}
+
