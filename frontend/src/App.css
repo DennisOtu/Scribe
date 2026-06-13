@@ -1,0 +1,45 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.navBar {
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index: 9999;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid grey;
+}
+
+.navBar a:hover {
+  font-weight: bold;
+}
+
+.brand {
+  font-size: 40px; 
+}
+
+.navRight {
+  display: inline-flex;
+}
+
+.navRight a {
+  margin-inline: 1rem;
+}
+
+.navRight div:hover {
+  cursor: pointer;
+}
+

@@ -3,11 +3,11 @@ from .models import *
 from .serializers import *
 from rest_framework.pagination import PageNumberPagination
 
-class PostListAPIView(generics.ListCreateAPIView):
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
+class ArticlesListAPIView(generics.ListCreateAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
     pagination_class = PageNumberPagination
 
-class PostDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
+class ArticleDetailsAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
