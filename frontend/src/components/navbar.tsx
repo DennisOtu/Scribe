@@ -4,23 +4,30 @@ const Navbar = () => {
 
     return (
         <nav className="navBar">
-            <div className="brand" >
-            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                Scirbe
-            </Link>
+            <div>
+                <Link to='' style={{ textDecoration: 'none', color:'inherit' }}>
+                    About
+                </Link>
             </div>
-            <div className="navRight" >
-                <div>
-                    <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    Sign Up
-                    </Link>
-                </div>
 
-                <div>
-                    <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div className="brand">
+                <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    Scribe
+                </Link>
+            </div>
+
+            <div className="navRight">
+				 <Link to="" style={{ textDecoration: 'none', color: 'inherit' }}>
+					Search
+				</Link>
+
+                <Link to="" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    Sign Up
+                </Link>
+
+                <Link to="" style={{ textDecoration: 'none', color: 'inherit' }}>
                     Log In
-                    </Link>
-                </div>
+                </Link>
             </div>
         </nav>
     )

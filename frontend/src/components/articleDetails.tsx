@@ -24,19 +24,19 @@ const ArticleDetails = () => {
     }
 */
     return(
-        <>
+        <div style={{ marginTop: '5rem' }}>
             {error && console.log(error)}
 
             {isLoading && <h3>Loading...</h3>}
 
             {data && 
-                <div>
+                <div style={{ paddingInline: '2rem' }}>
                     <h2 style={{ marginBlock: '1rem'}}>{ data.title }</h2>
-                    <h4 style={{ marginBlock: '1rem'}}> {data.author}</h4>
+                    <h4 style={{ marginBlock: '1rem'}}>{data.author}</h4>
                     <p>{data.content}</p>                
                 </div>
             }
-        </>
+        </div>
     )
 }
 

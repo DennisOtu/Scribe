@@ -21,22 +21,22 @@ const ArticlesList = () => {
     }
 */
     return(
-        <>
+        <div style={{ marginTop: '5rem' }}>
             {error && console.log(error)}
 
             {isLoading && <h3>Loading...</h3>}
 
             {data && data.map(article =>
                 <ul>
-                    <li>
-                        <Link to={{ pathname: '/article-details'}}  state={{ articleId: `${article.id}` }}  style={{margin: '1rem'}}>
+                    <li style={{ margin: '1rem'}}>
+                        <Link to={{ pathname: `/article/${article.id}`}}  state={{ articleId: article.id }} >
                             { article.title }
                         </Link>
                     </li>
                 </ul>
 
             )}
-        </>
+        </div>
     )
 }
 
