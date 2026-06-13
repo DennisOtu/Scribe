@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query"
+import { Link } from "react-router-dom";
 
 const ArticlesList = () => {
     const getAllArticles = async () => {
@@ -16,11 +17,9 @@ const ArticlesList = () => {
 
 /*  
     if(data){
-        console.log(data);
-        
+        console.log(data);   
     }
 */
-
     return(
         <>
             {error && console.log(error)}
@@ -28,7 +27,14 @@ const ArticlesList = () => {
             {isLoading && <h3>Loading...</h3>}
 
             {data && data.map(article =>
-                <p style={{marginBlock: '1em'}}>{ article.title }</p>
+                <ul>
+                    <li>
+                        <Link to={{ pathname: '/article-details'}}  state={{ articleId: `${article.id}` }}  style={{margin: '1rem'}}>
+                            { article.title }
+                        </Link>
+                    </li>
+                </ul>
+
             )}
         </>
     )
