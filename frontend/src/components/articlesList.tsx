@@ -21,15 +21,13 @@ const ArticlesList = () => {
     }
 */
     return(
-        <div style={{ marginTop: '5rem' }}>
+        <div style={{ marginBlock: '5rem' }}>
             {error && console.log(error)}
 
             {isLoading && <h3>Loading...</h3>}
             
             {data &&
-                <>
-                
-                
+                <>               
                     <div className="heroSection">
                         <div>
                             <img src="https://picsum.photos/2000/400" style={{ height: '60vh', width: '60vw' }} alt="Random Unsplash Image"/>
@@ -64,7 +62,7 @@ const ArticlesList = () => {
                     </div>
 
                     <div className="subScribeSection">
-                        <h1 style={{textAlign: 'center'}}>subScribe</h1>
+                        <h1 style={{textAlign: 'center', paddingBlock: '2rem'}}>subScribe</h1>
                         <p>Vestibulum hendrerit fringilla diam a aliquam. Curabitur vel orci ut nisl facilisis tincidunt nec non felis. 
                             Maecenas ut libero justo. Praesent sit amet libero ligula. Donec vel neque nisl. Sed convallis, lectus quis
                             condimentum consectetur, orci purus maximus sem, id porttitor lectus neque at augue. Morbi nisi ipsum, pharetra
@@ -73,23 +71,23 @@ const ArticlesList = () => {
                     </div>
 
                     <div className="latestArticlesSection">
-                        <h1 style={{textAlign: 'center'}}>Latest Articles</h1>
+                        <h1 style={{textAlign: 'center', paddingBlock: '2rem'}}>Latest Articles</h1>
                         <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '1rem' }}>
-                            <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
+                            <img src="https://picsum.photos/id/14/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                             <div>
                                 <h5>{data[4].category}</h5>
                                 <p>{data[4].description}</p>
                             </div>
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '1rem' }}>
-                            <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
+                            <img src="https://picsum.photos/id/15/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                             <div>
                                 <h5>{data[5].category}</h5>
                                 <p>{data[5].description}</p>
                             </div>
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '1rem' }}>
-                            <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
+                            <img src="https://picsum.photos/id/16/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                             <div>
                                 <h5>{data[6].category}</h5>
                                 <p>{data[6].description}</p>
@@ -100,48 +98,48 @@ const ArticlesList = () => {
                     </div>
 
                     <div>
-                        <h1 style={{ textAlign: 'center' }}>Other Articles</h1>
+                        <h1 style={{ textAlign: 'center', paddingBlock: '2rem' }}>Other Articles</h1>
                         <div className="otherArticlesSection">
                             <div>
-                                <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '30vw' }} />
-                                <h5>{data[7].category}</h5>
-                                <h3>{data[7].title}</h3>
+                                <img src="https://picsum.photos/id/17/700/400" style={{ height: '40vh', width: '30vw' }} />
+                                <h6>{data[7].category}</h6>
+                                <h4>{data[7].title}</h4>
                                 <p>{data[7].description}</p>
                             </div>
 
                             <div>
-                                <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '30vw' }} />
-                                <h5>{data[7].category}</h5>
-                                <h3>{data[7].title}</h3>
-                                <p>{data[7].description}</p>
+                                <img src="https://picsum.photos/id/18/700/400" style={{ height: '40vh', width: '30vw' }} />
+                                <h6>{data[8].category}</h6>
+                                <h4>{data[8].title}</h4>
+                                <p>{data[8].description}</p>
                             </div>
 
                             <div>
-                                <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '30vw' }} />
-                                <h5>{data[7].category}</h5>
-                                <h3>{data[7].title}</h3>
-                                <p>{data[7].description}</p>
+                                <img src="https://picsum.photos/id/19/700/400" style={{ height: '40vh', width: '30vw' }} />
+                                <h6>{data[9].category}</h6>
+                                <h4>{data[9].title}</h4>
+                                <p>{data[9].description}</p>
                             </div>
 
                             <div>
-                                <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '30vw' }} />
-                                <h5>{data[7].category}</h5>
-                                <h3>{data[7].title}</h3>
-                                <p>{data[7].description}</p>
+                                <img src="https://picsum.photos/id/20/700/400" style={{ height: '40vh', width: '30vw' }} />
+                                <h6>{data[10].category}</h6>
+                                <h4>{data[10].title}</h4>
+                                <p>{data[10].description}</p>
                             </div>
 
                             <div>
-                                <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '30vw' }} />
-                                <h5>{data[7].category}</h5>
-                                <h3>{data[7].title}</h3>
-                                <p>{data[7].description}</p>
+                                <img src="https://picsum.photos/id/21/700/400" style={{ height: '40vh', width: '30vw' }} />
+                                <h6>{data[11].category}</h6>
+                                <h4>{data[11].title}</h4>
+                                <p>{data[11].description}</p>
                             </div>
 
                             <div>
-                                <img src="https://picsum.photos/100/400" style={{ height: '40vh', width: '30vw' }} />
-                                <h5>{data[7].category}</h5>
-                                <h3>{data[7].title}</h3>
-                                <p>{data[7].description}</p>
+                                <img src="https://picsum.photos/id/22/700/400" style={{ height: '40vh', width: '30vw' }} />
+                                <h6>{data[12].category}</h6>
+                                <h4>{data[12].title}</h4>
+                                <p>{data[12].description}</p>
                             </div>                                                                                                                
                         </div>
 

@@ -64,3 +64,9 @@ html{
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+
+.otherArticlesSection div {
+  height: 70vh;
+  overflow: hidden;
+  padding: 10px;
+}
