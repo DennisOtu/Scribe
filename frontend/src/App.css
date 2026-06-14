@@ -31,6 +31,10 @@ html{
   font-size: 40px; 
 }
 
+.brand:hover{
+  color: orange;
+ }
+
 .navRight {
   display: inline-flex;
 }
@@ -50,8 +54,11 @@ html{
 }
 
 .subScribeSection {
-  height: 30vh;
-  padding-inline: 2rem;
+  height: 40vh;
+  padding: 30px;
+  margin-inline: 2rem;
+  background-color: grey;
+  color: white;
 }
 
 .latestArticlesSection {
@@ -59,14 +66,17 @@ html{
 }
 
 .otherArticlesSection {
-  padding-inline: 2rem;
+  margin-inline: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
 }
 
 .otherArticlesSection div {
   height: 70vh;
   overflow: hidden;
   padding: 10px;
+}
+
+button{
+  cursor: pointer;
 }
