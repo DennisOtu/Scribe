@@ -32,7 +32,7 @@ const ArticlesList = () => {
                         <Link to={`article/${data[0].id}`} state={{ articleId: data[0].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                             <div>
                                 <img src="https://picsum.photos/seed/nj83x1c/2000/400" style={{ height: '60vh', width: '60vw' }} alt="Random Unsplash Image"/>
-                                    <h5>{data[0].category}</h5>
+                                    <h5>{data[0].section}</h5>
                                     <h4>{data[0].author}</h4>
                                     <h2>{data[0].title}</h2>
                                     <p>{data[0].description}</p>
@@ -50,7 +50,7 @@ const ArticlesList = () => {
                                 <Link to={`article/${data[1].id}`} state={{ articleId: data[1].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                     <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
                                         <div style={{ padding: '5px' }}>
-                                            <h5>{data[1].category}</h5>
+                                            <h5>{data[1].section}</h5>
                                             <p>{data[1].title}</p>
                                         </div>
                                         <div>
@@ -63,7 +63,7 @@ const ArticlesList = () => {
                                 <Link to={`article/${data[2].id}`} state={{ articleId: data[2].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                     <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
                                         <div style={{ padding: '5px' }}>
-                                            <h5>{data[2].category}</h5>
+                                            <h5>{data[2].section}</h5>
                                             <p>{data[2].title}</p>
                                         </div>
                                         <div>
@@ -77,7 +77,7 @@ const ArticlesList = () => {
                                 <Link to={`article/${data[3].id}`} state={{ articleId: data[3].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                     <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
                                         <div style={{ padding: '5px' }}>
-                                            <h5>{data[3].category}</h5>
+                                            <h5>{data[3].section}</h5>
                                             <p>{data[3].title}</p>
                                         </div>
                                         <div>
@@ -99,7 +99,7 @@ const ArticlesList = () => {
                                 <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', marginBottom: '2rem' }}>
                                     <img src="https://picsum.photos/seed/e14/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                                     <div>
-                                        <h5>{data[4].category}</h5>
+                                        <h5>{data[4].section}</h5>
                                         <p>{data[4].description}</p>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@ const ArticlesList = () => {
                                 <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '2rem' }}>
                                     <img src="https://picsum.photos/seed/1eer5/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                                     <div>
-                                        <h5>{data[5].category}</h5>
+                                        <h5>{data[5].section}</h5>
                                         <p>{data[5].description}</p>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@ const ArticlesList = () => {
                                 <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '2rem' }}>
                                     <img src="https://picsum.photos/seed/f16/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                                     <div>
-                                        <h5>{data[6].category}</h5>
+                                        <h5>{data[6].section}</h5>
                                         <p>{data[6].description}</p>
                                     </div>   
                                 </div>
@@ -154,7 +154,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[7].id}`} state={{ articleId: data[7].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/1t67/700/400" style={{ height: '40vh', width: '30vw' }} />
-                                    <h6>{data[7].category}</h6>
+                                    <h6>{data[7].section}</h6>
                                     <h4>{data[7].title}</h4>
                                     <p>{data[7].description}</p>
                                 </div>
@@ -163,7 +163,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[8].id}`} state={{ articleId: data[8].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/1810/700/400" style={{ height: '40vh', width: '30vw' }} />
-                                    <h6>{data[8].category}</h6>
+                                    <h6>{data[8].section}</h6>
                                     <h4>{data[8].title}</h4>
                                     <p>{data[8].description}</p>
                                 </div>
@@ -172,7 +172,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[9].id}`} state={{ articleId: data[9].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/zz19/700/400" style={{ height: '40vh', width: '30vw' }} />
-                                    <h6>{data[9].category}</h6>
+                                    <h6>{data[9].section}</h6>
                                     <h4>{data[9].title}</h4>
                                     <p>{data[9].description}</p>
                                 </div>
@@ -181,7 +181,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[10].id}`} state={{ articleId: data[10].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/2ol0/700/400" style={{ height: '40vh', width: '30vw' }} />
-                                    <h6>{data[10].category}</h6>
+                                    <h6>{data[10].section}</h6>
                                     <h4>{data[10].title}</h4>
                                     <p>{data[10].description}</p>
                                 </div>
@@ -190,7 +190,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[11].id}`} state={{ articleId: data[11].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/2x31/700/400" style={{ height: '40vh', width: '30vw' }} />
-                                    <h6>{data[11].category}</h6>
+                                    <h6>{data[11].section}</h6>
                                     <h4>{data[11].title}</h4>
                                     <p>{data[11].description}</p>
                                 </div>
@@ -199,7 +199,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[12].id}`} state={{ articleId: data[12].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/22/700/400" style={{ height: '40vh', width: '30vw' }} />
-                                    <h6>{data[12].category}</h6>
+                                    <h6>{data[12].section}</h6>
                                     <h4>{data[12].title}</h4>
                                     <p>{data[12].description}</p>
                                 </div>   
@@ -215,7 +215,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[89].id}`} state={{ articleId: data[89].id }} style={{ textDecoration: 'none', color: 'inherit' }}>                            
                                 <div>
                                     <img src="https://picsum.photos/seed/22/1000/500" style={{ height: '50vh', width: '100%' }} />
-                                    <h5>{data[89].category}</h5>
+                                    <h5>{data[89].section}</h5>
                                     <h3>{data[89].title}</h3>
                                     <p>{data[89].description}</p>
                                 </div>
@@ -224,7 +224,7 @@ const ArticlesList = () => {
                             <Link to={`article/${data[103].id}`} state={{ articleId: data[103].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>
                                     <img src="https://picsum.photos/seed/22x0q/1000/500" style={{ height: '50vh', width: '100%' }} />
-                                    <h5>{data[103].category}</h5>
+                                    <h5>{data[103].section}</h5>
                                     <h3>{data[103].title}</h3>
                                     <p>{data[103].description}</p>
                                 </div>
