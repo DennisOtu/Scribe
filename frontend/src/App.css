@@ -43,3 +43,30 @@ html{
   cursor: pointer;
 }
 
+.heroSection {
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.subScribeSection {
+  height: 30vh;
+  padding-inline: 2rem;
+}
+
+.latestArticlesSection {
+  padding-inline: 2rem;
+}
+
+.otherArticlesSection {
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.otherArticlesSection div {
+  height: 70vh;
+  overflow: hidden;
+  padding: 10px;
+}
