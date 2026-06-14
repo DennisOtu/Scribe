@@ -39,18 +39,16 @@ const ArticlesList = () => {
                             </div>
                         </Link>
                         <div style={{ display: 'grid', gridTemplateRows: '1fr 3fr', gap: '10px'}}>
-                            <div>
+                            <div style={{ padding: '20px' }}>
                                 <h2 style={{ color: 'grey' }}>sub<span style={{ color: 'orange'}}>Scribe</span></h2>
-                                <p style={{ marginBottom: '1rem' }}>Vivamus diam dolor, accumsan id hendrerit eget, euismod at elit. 
-                                    Integer consequat sem.
-                                </p>
+                                <p style={{ paddingInline: '10px',marginBottom: '1rem', fontSize: '14px', textAlign: 'center' }}>Get all the latest articles direct on your device with our newsletters</p>
                                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                                     <button style={{width: '50%', height: '40px' }}>Subscribe</button>
                                 </div>
                             </div>
-                            <div>
+                            <div style={{ paddingLeft: '20px' }}>
                                 <Link to={`article/${data[1].id}`} state={{ articleId: data[1].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                    <div style={{ marginBottom: '1rem', display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
+                                    <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
                                         <div style={{ padding: '5px' }}>
                                             <h5>{data[1].category}</h5>
                                             <p>{data[1].title}</p>
@@ -61,9 +59,9 @@ const ArticlesList = () => {
 
                                     </div>
                                 </Link>
-
+                                <hr/>
                                 <Link to={`article/${data[2].id}`} state={{ articleId: data[2].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                    <div style={{ marginBottom: '1rem', display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
+                                    <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
                                         <div style={{ padding: '5px' }}>
                                             <h5>{data[2].category}</h5>
                                             <p>{data[2].title}</p>
@@ -74,10 +72,10 @@ const ArticlesList = () => {
 
                                     </div>
                                 </Link>
-
+                                <hr/>
 
                                 <Link to={`article/${data[3].id}`} state={{ articleId: data[3].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                    <div style={{ marginBottom: '1rem', display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
+                                    <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr' }}>
                                         <div style={{ padding: '5px' }}>
                                             <h5>{data[3].category}</h5>
                                             <p>{data[3].title}</p>
@@ -88,26 +86,17 @@ const ArticlesList = () => {
 
                                     </div>
                                 </Link>
-
                             </div>
 
 
                         </div>
                     </div>
 
-                    <div className="subScribeSection">
-                        <h1 style={{ color: 'inherit' }}>sub<span style={{ color: 'wheat' }}>Scribe</span></h1>
-                        <p style={{ fontSize: '14px' }}>Vestibulum hendrerit fringilla diam a aliquam. Curabitur vel orci ut nisl facilisis tincidunt nec non felis. 
-                            Maecenas ut libero justo. Praesent sit amet libero ligula. Donec vel neque nisl. Sed convallis, lectus quis
-                            condimentum consectetur, orci purus maximus sem, id porttitor lectus neque at augue.
-                        </p>
-                    </div>
-
                     <div>
                         <h1 style={{textAlign: 'center', paddingBlock: '2rem', borderBlock: '1px solid grey'}}>Latest Articles</h1>
                         <div className="latestArticlesSection">
                             <Link to={`article/${data[4].id}`} state={{ articleId: data[4].id }} style={{ textDecoration: 'none', color: 'inherit' }}>                            
-                                <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '1rem' }}>
+                                <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', marginBottom: '2rem' }}>
                                     <img src="https://picsum.photos/seed/e14/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                                     <div>
                                         <h5>{data[4].category}</h5>
@@ -117,7 +106,7 @@ const ArticlesList = () => {
                             </Link>
 
                             <Link to={`article/${data[5].id}`} state={{ articleId: data[5].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '1rem' }}>
+                                <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '2rem' }}>
                                     <img src="https://picsum.photos/seed/1eer5/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                                     <div>
                                         <h5>{data[5].category}</h5>
@@ -127,7 +116,7 @@ const ArticlesList = () => {
                             </Link>
 
                             <Link to={`article/${data[6].id}`} state={{ articleId: data[6].id }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '1rem' }}>
+                                <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr',marginBottom: '2rem' }}>
                                     <img src="https://picsum.photos/seed/f16/700/400" style={{ height: '40vh', width: '100%', paddingRight: '1rem' }}/>
                                     <div>
                                         <h5>{data[6].category}</h5>
@@ -143,6 +132,20 @@ const ArticlesList = () => {
 
                     <div style={{ display: 'flex', justifyContent: 'center', marginBlock: '3rem' }}>
                         <button style={{width: '30%', height: '40px' }}>Read More</button>
+                    </div>
+
+                    <div className="subScribeSection">
+                        <h1 style={{ color: 'inherit',textAlign: 'center' }}>sub<span style={{ color: 'wheat' }}>Scribe</span></h1>
+                        <div style={{ padding: '30px' }}>
+                            <p style={{ fontSize: '14px', textAlign: 'left' }}>Vestibulum hendrerit fringilla diam <br/> vel aliquam. Curabitur  vel orci ut nisl facilisis tincidunt nec non felis. 
+                               Maecenas ut libero<br/> justo. Praesent sit amet libero ligula. Donec vel neque nisl. Sed convallis, lectus quis
+                                condimentum consectetur, <br/>orci purus maximus sem, id porttitor lectus neque at augue.
+                            </p>  
+                            <div style={{ marginTop: '1rem'}}>
+                                <button style={{width: '300px', height: '40px' }}>Subscribe</button>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div>

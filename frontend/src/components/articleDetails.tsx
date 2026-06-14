@@ -30,10 +30,12 @@ const ArticleDetails = () => {
             {isLoading && <h3>Loading...</h3>}
 
             {data && 
-                <div style={{ paddingInline: '2rem' }}>
-                    <h2 style={{ marginBlock: '1rem'}}>{ data.title }</h2>
-                    <h4 style={{ marginBlock: '1rem'}}>{data.author}</h4>
-                    <p>{data.content}</p>                
+                <div >
+                    <h2 style={{ marginLeft: '6rem', fontSize: '40px' }}>{ data.title }</h2>
+                    <p style={{ marginBlock: '1rem', marginLeft: '6rem'}}>By {data.author}</p>
+                    <img src="https://picsum.photos/2000/1000" style={{ height: '90vh', width: '80vw', marginInline: '6rem' }} alt="Random Unsplash Image"/>
+                    <p style={{ marginBottom: '1rem', marginInline: '6rem' , fontSize: '14px', fontStyle: 'italic' }}>{data.description}</p>
+                    <p style={{ marginInline: '15rem' }} >{data.content}</p>                
                 </div>
             }
         </div>
