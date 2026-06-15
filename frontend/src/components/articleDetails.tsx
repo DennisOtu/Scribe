@@ -46,8 +46,9 @@ const ArticleDetails = () => {
                         <p style={{ fontSize: '14px', paddingInline: '10px' }}>Ut dapibus orci scelerisque dignissim suscipit. Etiam suscipit velit orci, ac accumsan est molestie vel. 
                             Nullam nec tincidunt justo. In vitae luctus elit. Nulla blandit.
                         </p>
+                    </div>    
 
-                    </div>               
+           
                 </div>
             }
         </div>
