@@ -17,7 +17,7 @@ const SuggestedArticles = () => {
 
     return(
         <>
-            { isLoading && <h1>Loading...</h1>}
+            { isLoading && <h5>Loading...</h5>}
 
             { error && console.log(error) }
 

@@ -27,7 +27,7 @@ const ArticleDetails = () => {
         <div style={{ marginBlock: '5rem' }}>
             {error && console.log(error)}
 
-            {isLoading && <h3>Loading...</h3>}
+            {isLoading && <h5>Loading...</h5>}
 
             {data && 
                 <div>
