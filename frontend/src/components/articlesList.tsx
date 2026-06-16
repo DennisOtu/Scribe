@@ -45,7 +45,7 @@ const ArticlesList = () => {
                         <div style={{ display: 'grid', gridTemplateRows: '1fr 3fr', gap: '10px'}}>
                             <div style={{ padding: '20px' }}>
                                 <h2 style={{ color: 'grey' }}>sub<span style={{ color: 'orange'}}>Scribe</span></h2>
-                                <p style={{ paddingInline: '10px',marginBottom: '1rem', fontSize: '14px', textAlign: 'center' }}>Get all the latest articles direct on your device with our newsletters</p>
+                                <p style={{ paddingInline: '10px',marginBottom: '1rem', fontSize: '14px', textAlign: 'center' }}>Get all the latest articles direct on your device with our newsletter</p>
                                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                                     <button style={{width: '50%', height: '40px' }}>Subscribe</button>
                                 </div>
