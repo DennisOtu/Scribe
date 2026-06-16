@@ -3,7 +3,7 @@ import Footer from "../components/footer"
 import Navbar from "../components/navbar"
 import SuggestedArticles from "../components/suggestedArticles"
 
-const ArticleDetailsPage = () => {
+const ArticleDetailsPage = () => {  
     return(
         <>
             <Navbar />
