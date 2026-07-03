@@ -48,8 +48,6 @@ const ArticleDetails = () => {
                             Nullam nec tincidunt justo. In vitae luctus elit. Nulla blandit.
                         </p>
                     </div>    
-
-           
                 </div>
             }
         </div>
